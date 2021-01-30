@@ -19,7 +19,7 @@ function updateDOM(ticketClass) {
 
 // Calculate subTotalCost
 let subTotalCost = function () {
-    return BookingData.firstClass * BookingData.firstClassCost + BookingData.economyClass * BookingData.economyClassCost;
+    return (BookingData.firstClass * BookingData.firstClassCost) + (BookingData.economyClass * BookingData.economyClassCost);
 }
 // Calculate Tax
 let taxCost = function () {
